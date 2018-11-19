@@ -5,6 +5,7 @@
  * Date: 19/11/2018
  * Time: 00:12
  */
+require_once("AutoLoader.php");
 
 class ComunicationService {
 
@@ -18,16 +19,16 @@ class ComunicationService {
 
 		$target = $this->Request["Target"];
 
-		switch ($target){
-			case "ReceiptService":
-				include "../ReceiptService/ReceiptAPI.php";
-					$this->Response = ReceiptAPI::Process($request["Body"]);
-				break;
-			case "UUIDService":
-				include "../UUIDService/UUIDAPI.php";
-				$this->Response = UUIDAPI::Process($request["Body"]);
-				break;
+
+		$methodsArray = get_class_methods($target);
+
+		if(in_array($request["Body"]["function"], $methodsArray))
+		{
+
+			$this->Response = call_user_func([$target,$request["Body"]["function"]], $request["Body"]["data"]);
 		}
+
+
 
 		return $this->Response;
 	}
@@ -42,7 +43,7 @@ if(!empty($_REQUEST["target"]) && !empty($_REQUEST["function"]) && !empty($_REQU
 		"Target" => $_REQUEST["target"],
 		"Body" => [
 			"function" => $_REQUEST["function"],
-			"data" => [$_REQUEST["data"]],
+			"data" => [ "uuid" =>  $_REQUEST["uuid"] ],
 		]
 	];
 

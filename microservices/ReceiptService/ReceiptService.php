@@ -9,12 +9,14 @@ require "Receipt.php";
 
 class ReceiptService {
 
-	public function  __construct() {
+	public function  __construct($input) {
 		return true;
 	}
 
-	public static function GetByUUID(string $uuid)
+	public static function GetByUUID($input)
 	{
+		$uuid = $input["uuid"];
+
 		try{
 			self::validateUUID($uuid);
 		}catch (Exception $e)
@@ -22,15 +24,15 @@ class ReceiptService {
 			echo $e->getMessage();
 		}
 
-		return "Im Receipt";
+		return self::parseToJson("Jsem tvoje Uctenka");
 	}
 
-	public static function GetCount()
+	public static function GetCount($input)
 	{
-		return 20;
+		return self::parseToJson("20");
 	}
 
-	public static function CreateReceipt()
+	public static function CreateReceipt($input)
 	{
 		$receipt = new Receipt();
 		$cs = new ComunicationService();
@@ -38,16 +40,21 @@ class ReceiptService {
 		$receipt->uuid_zpravy = $cs->Process($request);
 		$receipt->celk_trzba = 320.20;
 		$receipt->dat_trzby = new DateTime();
-		return json_encode($receipt,JSON_PRETTY_PRINT);
+		return self::parseToJson($receipt);
 
 	}
 
-	private static function validateUUID(string $uuid)
+	private static function validateUUID($input)
 	{
+		$uuid = $input["uuid"];
 		if(!$uuid){
 			throw new Exception("Invalid UUID");
 		}else return true;
+	}
 
+	private static function parseToJson($object)
+	{
+		return json_encode($object, JSON_PRETTY_PRINT);
 	}
 
 }

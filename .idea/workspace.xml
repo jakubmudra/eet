@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3b5232f-7551-490a-98fc-6a0223de038b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/microservices/ComunicationService/ComunicationService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/ReceiptService/Receipt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/ReceiptService/ReceiptAPI.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/ReceiptService/ReceiptService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/UUIDService/UUIDAPI.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/UUIDService/UUIDService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/ComunicationService/AutoLoader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/PDOService/PDOService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/ComunicationService/ComunicationService.php" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/ComunicationService/ComunicationService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/ReceiptService/ReceiptAPI.php" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/ReceiptService/ReceiptAPI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/ReceiptService/ReceiptService.php" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/ReceiptService/ReceiptService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/UUIDService/UUIDService.php" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/UUIDService/UUIDService.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,12 +27,12 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="php" value="7" />
+          <entry key="php" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="6" />
+          <entry key="PHP" value="9" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -42,20 +41,20 @@
         <counts>
           <entry key="dummy" value="18" />
           <entry key="gitignore" value="1" />
-          <entry key="php" value="2451" />
+          <entry key="php" value="3268" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="2302" />
+          <entry key="PHP" value="3119" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="Scratch" value="149" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="4" />
+          <entry key="PHP Class.type" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -71,20 +70,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/microservices/ReceiptService/ReceiptService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+            <state relative-caret-position="199">
+              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/microservices/ComunicationService/ComunicationService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservices/ComunicationService/ComunicationService.php">
+        <entry file="file://$PROJECT_DIR$/microservices/ComunicationService/AutoLoader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+            <state relative-caret-position="107">
+              <caret line="66" column="56" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
+              <folding>
+                <element signature="e#7#1149#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservices/ReceiptService/ReceiptAPI.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="23" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -92,8 +112,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/microservices/ReceiptService/Receipt.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1567">
-              <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+            <state relative-caret-position="1198">
+              <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservices/PDOService/PDOService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -119,8 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/microservices/UUIDService/UUIDService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            <state relative-caret-position="375">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -136,12 +165,15 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/microservices/ReceiptService/ReceipService.php" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.php" />
-        <option value="$PROJECT_DIR$/microservices/UUIDService/UUIDService.php" />
         <option value="$PROJECT_DIR$/microservices/ReceiptService/API.php" />
         <option value="$PROJECT_DIR$/microservices/UUIDService/API.php" />
         <option value="$PROJECT_DIR$/microservices/ReceiptService/Receipt.php" />
-        <option value="$PROJECT_DIR$/microservices/ComunicationService/ComunicationService.php" />
+        <option value="$PROJECT_DIR$/microservices/PDOService/PDOService.php" />
+        <option value="$PROJECT_DIR$/microservices/ReceiptService/ReceiptAPI.php" />
+        <option value="$PROJECT_DIR$/microservices/ComunicationService/AutoLoader.php" />
         <option value="$PROJECT_DIR$/microservices/ReceiptService/ReceiptService.php" />
+        <option value="$PROJECT_DIR$/microservices/UUIDService/UUIDService.php" />
+        <option value="$PROJECT_DIR$/microservices/ComunicationService/ComunicationService.php" />
       </list>
     </option>
   </component>
@@ -179,6 +211,12 @@
               <item name="maturita" type="462c0819:PsiDirectoryNode" />
               <item name="microservices" type="462c0819:PsiDirectoryNode" />
               <item name="ComunicationService" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maturita" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maturita" type="462c0819:PsiDirectoryNode" />
+              <item name="microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="PDOService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="maturita" type="b2602c69:ProjectViewProjectNode" />
@@ -241,12 +279,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542580759950</updated>
-      <workItem from="1542580765406" duration="3834000" />
+      <workItem from="1542580765406" duration="7248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3834000" />
+    <option name="totallyTimeSpent" value="7248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -294,10 +332,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/UUIDService/UUIDService.php">
+    <entry file="file://$PROJECT_DIR$/microservices/PDOService/PDOService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="276">
+          <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/ReceiptService/Receipt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1198">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -310,29 +355,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/microservices/ReceiptService/ReceiptAPI.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/ReceiptService/Receipt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1567">
-          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/ComunicationService/ComunicationService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        <state relative-caret-position="231">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="23" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservices/ReceiptService/ReceiptService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+        <state relative-caret-position="199">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/UUIDService/UUIDService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/ComunicationService/AutoLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="66" column="56" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
+          <folding>
+            <element signature="e#7#1149#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/ComunicationService/ComunicationService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
         </state>
       </provider>
     </entry>

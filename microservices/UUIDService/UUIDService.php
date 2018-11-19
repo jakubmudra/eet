@@ -18,7 +18,7 @@ class UUIDService {
 	 * @link https://gist.github.com/elzafirox/4115137#file-uuid-php-L68-L96
 	 */
 
-	public static function v4()
+	public static function v4($input)
 	{
 		return sprintf('%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
 			// 32 bits for "time_low"
